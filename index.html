@@ -3,5 +3,95 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+  
+  <form name="alk2" action="">
+
+<CENTER>
+
+<div class="style2">
+
+    <table class="c3">
+
+      <tbody>
+
+        <tr bgcolor=#499D4A>
+
+          <td colspan="2">
+
+            Разбавить
+
+            <input size="4" value=" 2" name="amount" />
+
+            <select name="amountm">
+
+              <option value="1">L</option>
+
+              <option value="0.0295735295625">US fl oz</option>
+
+              <option value="0.2365882365">US cups</option>
+
+              <option value="0.473176473">US pint</option>
+
+              <option value="0.946352946">US qt</option>
+
+              <option value="3.7854118">US gal</option>
+
+            </select>
+
+            of
+
+            <input size="4" value=" 75" name="strong" />
+
+            % спирт До <input size="4" value=" 40" name="weak" />
+
+            %
+
+          </td>
+
+        </tr>
+
+        <tr bgcolor=#499D4A>
+
+          <td>Нужно добавить
+
+            <input size="4" name="use_water" />
+
+            <select name="use_waterm">
+
+              <option value="1">L</option>
+
+              <option value="33.8140227018">US fl oz</option>
+
+              <option value="4.22675283773">US cups</option>
+
+              <option value="2.11337641887">US pints</option>
+
+              <option value="1.05668820943">US qt</option>
+
+              <option value="0.264172052358">US gal</option>
+
+            </select>
+
+            воды
+
+          </td>
+
+          <td align="right" valign="bottom">
+
+            <input onclick="alk2.use_water.value=Math.round(alk2.amount.value*amountm.value *((alk2.strong.value / alk2.weak.value)-1)*alk2.use_waterm.value*1000)/1000" value="СЧИТАТЬ" type="button" />
+
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  </center>
+
+</form>
 </body>
 </html>
